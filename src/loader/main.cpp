@@ -56,6 +56,7 @@ void Init()
 {
     LoadProxiedLibrary(); // loads original `version.dll` to proxy the exported functions back to it
     FuckOffEAAppSetup(); // that function is located in the "Main" project
+	LoadLibraryA("anadius.dll"); // loads anadius's dlc unlocker dll
 }
 
 BOOL WINAPI DllMain(HINSTANCE hInstDLL, DWORD fdwReason, LPVOID lpvReserved)
